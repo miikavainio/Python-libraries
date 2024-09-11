@@ -36,3 +36,11 @@ def test_for_visitor_score_and_score():
 
 # Testi
 # test_for_visitor_score_and_score()
+
+# Määrittelee voittajan ja häviäjän tulosten perusteella
+df_nhl['Winning Team'] = df_nhl.apply(
+    lambda row: row['Visitor'] if row['Visitor Score'] > row['Home Score'] else row['Home'], axis=1
+)
+df_nhl['Losing Team'] = df_nhl.apply(
+    lambda row: row['Home'] if row['Visitor Score'] > row['Home Score'] else row['Visitor'], axis=1
+)
