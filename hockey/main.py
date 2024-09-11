@@ -17,3 +17,22 @@ df_nhl['Score'] = df_nhl['Score'].astype(str)
 df_nhl['Score.1'] = df_nhl['Score.1'].astype(str)
 
 # print(df_nhl['Score'].head(10))
+
+# Visitor ja Home tulokset
+df_nhl['Visitor Score'] = df_nhl['Score'].str.extract(r'(\d+)').astype(float)
+df_nhl['Home Score'] = df_nhl['Score.1'].str.extract(r'(\d+)').astype(float)
+
+# print(df_nhl['Visitor Score'].head(10))
+
+def test_for_visitor_score_and_score():
+    # Vertailee Visitor scorea sekä Scorea float arvoina
+    mismatches = df_nhl[df_nhl['Visitor Score'] != df_nhl['Score'].str.extract(r'(\d+)').astype(float)[0]]
+    
+    if mismatches.empty:
+        print("Test passed")
+    else:
+        print(f"Test failed")
+        print(mismatches[['Score', 'Visitor Score']])
+
+# Testi
+# test_for_visitor_score_and_score()
