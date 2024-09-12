@@ -19,8 +19,8 @@ df_nhl['Score.1'] = df_nhl['Score.1'].astype(str)
 # print(df_nhl['Score'].head(10))
 
 # Visitor ja Home tulokset
-df_nhl['Visitor Score'] = df_nhl['Score'].str.extract(r'(\d+)').astype(float)
-df_nhl['Home Score'] = df_nhl['Score.1'].str.extract(r'(\d+)').astype(float)
+df_nhl['Visitor Score'] = df_nhl['Score'].str.extract(r'(\d+)$').astype(float)
+df_nhl['Home Score'] = df_nhl['Score.1'].str.extract(r'(\d+)$').astype(float)
 
 # print(df_nhl['Visitor Score'].head(10))
 
