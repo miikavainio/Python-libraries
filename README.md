@@ -22,3 +22,8 @@ matplotlib.ticker as mticker import was to test out different way to modify axis
 
 ( hockey/overtime.py )
 ![Figure_4](https://github.com/user-attachments/assets/b6986841-0390-4f8d-977d-595b9fc994e2)
+
+Added Shootouts to the previous figure to see differences in them.  
+Minor edits in the output, grid added and yaxis modified  
+( hockey/overtime_and_shootout.py )
+![Figure_5](https://github.com/user-attachments/assets/12f233cb-32c4-46fe-a8c5-662f19740188)
