@@ -16,7 +16,9 @@ Here I wanted to test out different palettes and modifying the x-axis.
 
 ![Figure_3](https://github.com/user-attachments/assets/158c86d0-1b29-4ef0-9d7c-d103d31b6485)
 
-This one was more difficult from the backend, since it had more details to get the wanted data correctly.
-matplotlib.ticker as mticker import was to test out different way to modify axis count.
+This one was more difficult from the backend, since it had more details to get the wanted data correctly.  
+
+matplotlib.ticker as mticker import was to test out different way to modify axis count.  
+
 ( hockey/overtime.py )
 ![Figure_4](https://github.com/user-attachments/assets/b6986841-0390-4f8d-977d-595b9fc994e2)
