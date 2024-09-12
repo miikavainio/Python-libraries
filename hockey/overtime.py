@@ -24,3 +24,20 @@ overtime_data.columns = ['Overtime Wins', 'Overtime Losses']
 # Sort (wins + losses)
 overtime_data['Total Overtime Games'] = overtime_data['Overtime Wins'] + overtime_data['Overtime Losses']
 overtime_data = overtime_data.sort_values(by='Total Overtime Games', ascending=False)
+
+plt.figure(figsize=(12, 8))
+ax = overtime_data[['Overtime Wins', 'Overtime Losses']].plot(kind='bar', stacked=True, color=['lightblue', 'salmon'], figsize=(14, 8))
+
+# Plot kustomointi
+plt.title('Overtime Wins (Blue) and Losses (Red) by Team')
+plt.xlabel('Team')
+plt.xticks(rotation=44, ha='right')
+
+plt.ylabel('Count')
+plt.legend(loc='upper right')
+plt.tight_layout()
+
+# Uutena testinä set_major_locator, jolla säädetään akselin (y) tickerien väliä
+ax.yaxis.set_major_locator(mticker.MultipleLocator(2))
+
+plt.show()
