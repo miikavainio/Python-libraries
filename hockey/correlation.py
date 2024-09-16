@@ -17,3 +17,11 @@ plt.figure(figsize=(8, 6))
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Matrix of Winning, Losing, and Total Goals')
 plt.show()
+
+# Scattered plot to visualize more
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x=df_nhl['Winning Team Score'], y=df_nhl['Total Goals'])
+plt.title('Winning Team Score vs Total Goals')
+plt.xlabel('Winning Team Score')
+plt.ylabel('Total Goals')
+plt.show()
