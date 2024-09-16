@@ -25,3 +25,11 @@ plt.title('Winning Team Score vs Total Goals')
 plt.xlabel('Winning Team Score')
 plt.ylabel('Total Goals')
 plt.show()
+
+# Scattered plot of losses
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x=df_nhl['Losing Team Score'], y=df_nhl['Total Goals'], color='red')
+plt.title('Losing Team Score vs Total Goals')
+plt.xlabel('Losing Team Score')
+plt.ylabel('Total Goals')
+plt.show()
