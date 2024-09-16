@@ -33,3 +33,7 @@ plt.title('Losing Team Score vs Total Goals')
 plt.xlabel('Losing Team Score')
 plt.ylabel('Total Goals')
 plt.show()
+
+# Print out the correlation ( 4 decimals )
+print(f"Correlation between Winning Team Score and Total Goals: {correlation_matrix.loc['Winning Team Score', 'Total Goals']:.4f}")
+print(f"Correlation between Losing Team Score and Total Goals: {correlation_matrix.loc['Losing Team Score', 'Total Goals']:.4f}")
