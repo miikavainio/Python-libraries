@@ -27,3 +27,8 @@ Added Shootouts to the previous figure to see differences in them.
 Minor edits in the output, grid added and yaxis modified  
 ( hockey/overtime_and_shootout.py )
 ![Figure_5](https://github.com/user-attachments/assets/12f233cb-32c4-46fe-a8c5-662f19740188)
+
+From this figure you can see the correlation between winning, losing and scoring goals.
+( correlation.py )
+![Figure_1](https://github.com/user-attachments/assets/8e60b47a-fa68-4a53-9bd2-cdba767a76ce)
+
